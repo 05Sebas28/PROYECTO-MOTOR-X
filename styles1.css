@@ -1,0 +1,213 @@
+/* Definición de variables de colores */
+:root {
+    --primary-color: #7D0A0A;
+    --secondary-color: #BF3131;
+    --accent-color: #EAD196;
+    --dark-color: #060505;
+}
+
+/* Tipografías globales */
+body {
+    font-family: 'Noto Serif', serif;
+    color: var(--dark-color);
+    background-color: var(--accent-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Botones */
+button {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: #7D0A0A !important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #BF3131;
+    border-color: #060505;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #7D0A0A;
+    border-color: #060505;
+}
+
+.card{
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+}
+
+/* Enlace de cerrar sesión */
+a {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* Contenedor del dashboard */
+.dashboard {
+    text-align: center;
+    background-color: var(--dark-color);
+    color: var(--accent-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 90%;
+}
+
+/* Estilos para tablas */
+.styled-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 16px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.styled-table thead tr {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    text-align: left;
+    font-weight: bold;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+}
+
+.styled-table tbody tr:hover {
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+    cursor: pointer;
+}
+
+/* Enlaces en tablas */
+.styled-table tbody td a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.styled-table tbody td a:hover {
+    text-decoration: underline;
+}
+
+/* Botón de acción */
+.action-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.action-button:hover {
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+}
+
+/* ESTILOS EDITAR USUARIO */
+
+/* Formulario estilizado */
+.form-container {
+    background-color: var(--dark-color);
+    color: var(--accent-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    font-family: 'Noto Serif', serif;
+}
+
+.form-container h1 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.form-container label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.form-container input,
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    font-family: 'Noto Serif', serif;
+}
+
+.form-container input[type="submit"],
+.form-container button {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    border: none;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form-container input[type="submit"]:hover,
+.form-container button:hover {
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+}
+
+/* ESTILOS PROVEEDORES */
+

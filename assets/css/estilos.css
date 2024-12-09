@@ -1,0 +1,259 @@
+/* Reset y configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url(../images/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenedor principal */
+.contenedor__todo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(36, 35, 35, 0.9); /* Fondo semitransparente */
+    border-radius: 15px;
+    padding: 40px 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Título de Registro */
+.titulo-registro {
+    font-size: 26px;
+    color: #46A2FD;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Formularios */
+.contenedor__login-register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    gap: 20px; /* Espaciado entre formulario y el botón de regresar */
+}
+
+/* Formulario dentro del contenedor */
+.contenedor__login-register form {
+    width: 100%;
+    padding: 40px 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaciado entre los campos */
+}
+
+/* Campos de formulario */
+.contenedor__login-register form input,
+.contenedor__login-register form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 15px; /* Separación entre campos */
+}
+
+/* Estilo del select */
+.contenedor__login-register form select {
+    background-color: #F9F9F9; /* Fondo ligeramente distinto */
+    font-size: 16px;
+}
+
+/* Botón de envío */
+.contenedor__login-register form button {
+    padding: 10px 40px;
+    margin-top: 20px;
+    border: none;
+    font-size: 14px;
+    background: #7D0A0A;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.contenedor__login-register form button:hover {
+    background: #BF3131;
+}
+
+/* Estilo para el botón de regresar */
+.regresar {
+    padding: 10px 40px;
+    border: none;
+    font-size: 14px;
+    background: #46A2FD; /* Color diferente para el botón de regreso */
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.regresar:hover {
+    background: #4C92C3;
+}
+
+/* Ajustes para mostrar/ocultar formularios */
+.formulario__login {
+    opacity: 1;
+    display: block;
+}
+
+.formulario__register {
+    display: none;
+}
+
+/* Responsividad */
+@media screen and (max-width: 850px) {
+    body {
+        padding: 20px;
+    }
+
+    .contenedor__login-register {
+        top: 0;
+        left: 0;
+    }
+
+    .contenedor__login-register form {
+        position: relative;
+    }
+}
+
+/* Estilo específico para la página de login */
+.contenedor__todo .contenedor__login-register h2 {
+    font-size: 26px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Estilos para el formulario de Login */
+.contenedor__todo .contenedor__login-register form {
+    width: 100%;
+    padding: 40px 20px;
+    background: #EAD196;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Aumentar la opacidad de la sombra */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Campos de entrada de login */
+.contenedor__todo .contenedor__login-register form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+}
+
+/* Estilo de los botones en login */
+.contenedor__todo .contenedor__login-register form button {
+    padding: 10px 40px;
+    margin-top: 20px;
+    border: none;
+    font-size: 14px;
+    background: #7D0A0A;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.contenedor__todo .contenedor__login-register form button:hover {
+    background: #BF3131;
+}
+
+/* Estilo para el botón de regresar en login */
+.regresar {
+    padding: 10px 40px;
+    border: none;
+    font-size: 14px;
+    background: #46A2FD; /* Color diferente para el botón de regreso */
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.regresar:hover {
+    background: #4C92C3;
+}
+
+.alerta {
+    background-color: #4CAF50; /* Fondo verde para éxito */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 20px auto; /* Centra el contenedor */
+    font-size: 16px;
+    font-weight: bold;
+    width: 80%; /* Ajusta el tamaño */
+    max-width: 400px; /* Limita el ancho máximo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    display: none; /* Mantenerla oculta inicialmente */
+}
+
+.contenedor__login-register form {
+    margin: 0 auto; /* Centrado horizontal */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar contenido dentro del formulario */
+}
+
+.alerta {
+    color: red;
+    background-color: #f8d7da;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
